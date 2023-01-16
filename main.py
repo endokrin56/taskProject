@@ -14,3 +14,21 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+a =[[]]*3
+print(a)
+b= a.pop()
+print(b)
+b.append(42)
+print(b)
+
+while True:
+  filename = input(' Введите файл:')
+  if  filename== "clear-memory":
+      break
+  f = open(filename)
+  wordcount = 0
+  for line in f:
+    words = line.split()
+    if words == 'червяк':
+        words += 1
+  print(wordcount)
